@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f7;
+  color: #17231a;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 14px 28px;
+  background: #174d18;
+  color: white;
+  box-shadow: 0 2px 8px #0003;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 9px 12px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  background: #2d6c2d;
+}
+
+main {
+  max-width: 1250px;
+  margin: auto;
+  padding: 25px;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #1d5b1d, #388e3c);
+  color: white;
+  padding: 45px 20px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: clamp(32px, 6vw, 54px);
+}
+
+.hero p {
+  margin: 0 0 22px;
+  font-size: 18px;
+}
+
+#search {
+  width: min(650px, 95%);
+  padding: 15px 18px;
+  border: 0;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.section-title h2 {
+  font-size: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #0002;
+  transition: transform .15s, box-shadow .15s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 18px #0003;
+}
+
+.thumb {
+  height: 135px;
+  display: grid;
+  place-items: center;
+  font-size: 54px;
+  background: linear-gradient(135deg, #65b54e, #d8f4c9);
+}
+
+.info {
+  padding: 13px;
+}
+
+.info h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.info span {
+  color: #667;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 15px;
+  color: #667;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  nav {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+  }
+
+  nav a {
+    white-space: nowrap;
+  }
+
+  main {
+    padding: 15px;
+  }
+}
