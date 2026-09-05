@@ -152,3 +152,15 @@ footer {
     padding: 15px;
   }
 }
+
+
+.play-btn {
+  display: inline-block;
+  margin-top: 9px;
+  padding: 7px 12px;
+  border-radius: 7px;
+  background: #1d6b25;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+}

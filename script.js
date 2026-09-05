@@ -1,16 +1,14 @@
 const games = [
-  {name:"Minecraft", icon:"⛏️", category:"Minecraft"},
-  {name:"Geometry Dash", icon:"🟨", category:"Action"},
-  {name:"Grand Theft Auto", icon:"🚗", category:"Action"},
-  {name:"FNAF", icon:"🐻", category:"Action"},
-  {name:"Supercar Legends", icon:"🏎️", category:"Car"},
-  {name:"Moto Trap", icon:"🏍️", category:"Car"},
-  {name:"Tank Battle", icon:"🪖", category:"Shooting"},
-  {name:"2 Player Soccer", icon:"⚽", category:"Sports"},
-  {name:"Basketball", icon:"🏀", category:"Sports"},
-  {name:"Fire & Water", icon:"🔥", category:"2 Player"},
-  {name:"Duck Merge", icon:"🦆", category:"2 Player"},
-  {name:"Zombie Attack", icon:"🧟", category:"Shooting"}
+  {name:"Minecraft Classic", icon:"⛏️", category:"Minecraft", url:"https://classic.minecraft.net/"},
+  {name:"Geometry Dash", icon:"🟨", category:"Action", url:"https://www.crazygames.com/"},
+  {name:"Moto X3M", icon:"🏍️", category:"Car", url:"https://www.crazygames.com/game/moto-x3m"},
+  {name:"Fireboy and Watergirl", icon:"🔥", category:"2 Player", url:"https://www.crazygames.com/game/fireboy-and-watergirl-the-forest-temple"},
+  {name:"Steve's World", icon:"🧱", category:"Minecraft", url:"https://www.crazygames.com/game/steve-s-world"},
+  {name:"Big Tower Tiny Square", icon:"🟪", category:"Action", url:"https://www.crazygames.com/game/big-tower-tiny-square"},
+  {name:"Moto X3M Winter", icon:"❄️", category:"Car", url:"https://www.crazygames.com/game/moto-x3m-4"},
+  {name:"Basketball", icon:"🏀", category:"Sports", url:"https://www.crazygames.com/"},
+  {name:"Soccer", icon:"⚽", category:"Sports", url:"https://www.crazygames.com/"},
+  {name:"Stickman", icon:"🕹️", category:"Action", url:"https://www.crazygames.com/it/game/stickman-that-one-level"}
 ];
 
 const grid = document.querySelector("#games");
@@ -22,7 +20,7 @@ function showGames(list) {
       <div class="thumb">${game.icon}</div>
       <div class="info">
         <h3>${game.name}</h3>
-        <span>${game.category}</span>
+        <span>${game.category}</span><div class="play-btn">PLAY ▶</div>
       </div>
     </article>
   `).join("") : "<p>No games found.</p>";
